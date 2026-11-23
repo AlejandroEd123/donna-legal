@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donna · Política de privacidad</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<h1>Política de privacidad de Donna</h1>
+<p class="fecha">Vigente desde el 22 de noviembre de 2026</p>
+
+<p>Donna es una secretaria por voz para el teléfono. Le dices una orden ("agenda una reunión el jueves a las diez", "anota comprar pan") y ella la apunta en tu Google Calendar o en tus Google Tasks, siempre después de que tú la confirmes. Donna es un proyecto pequeño de Vessel Data Solutions, que está en fase de pruebas. Aquí explicamos, sin letra chica, qué datos toca y para qué.</p>
+
+<h2>1. Qué datos usa Donna</h2>
+<ul>
+  <li><strong>Tu voz, convertida en texto.</strong> Cuando mantienes pulsado el micrófono, el reconocedor de voz de tu propio teléfono (el de Google en Android, el de Apple en iPhone) transforma lo que dices en texto. Donna no graba ni guarda el audio; recibe solo el texto. Ese reconocedor lo gestiona el fabricante del sistema según sus propias políticas.</li>
+  <li><strong>El texto de tus órdenes.</strong> Se envía a nuestro servidor para entender qué quieres hacer.</li>
+  <li><strong>Tu Google Calendar y tus Google Tasks.</strong> Con tu permiso, Donna lee tus eventos y tareas (para decirte qué tienes hoy y avisarte si una cita choca con otra) y crea, cambia o borra eventos y tareas cuando tú lo confirmas.</li>
+  <li><strong>Tus preferencias.</strong> Apariencia, color, voz, ciudad para el clima y monedas que quieres ver. Se guardan solo en tu teléfono.</li>
+</ul>
+<p>Donna no usa tu ubicación GPS, tus contactos, tus fotos ni tu correo.</p>
+
+<h2>2. Dónde se procesan</h2>
+<ul>
+  <li><strong>Nuestro servidor.</strong> Las órdenes pasan por un servidor propio (n8n) alojado en Oracle Cloud. Allí se guarda el permiso de acceso a Google que tú concedes, para que Donna pueda actuar en tu calendario y tus tareas. También se guardan las propuestas pendientes de confirmar, que vencen a los 30 minutos, y un historial técnico de ejecuciones que usamos solo para corregir fallos.</li>
+  <li><strong>Anthropic.</strong> Para interpretar tus órdenes, el texto (y, cuando hace falta, lo que tienes en la agenda ese día) se envía a la IA Claude de Anthropic mediante su API. Según sus condiciones comerciales, Anthropic no usa esos datos para entrenar sus modelos.</li>
+  <li><strong>Google.</strong> Tus eventos y tareas viven en tu cuenta de Google; Donna solo actúa sobre ellos a través de las API oficiales de Google Calendar y Google Tasks.</li>
+  <li><strong>Fuentes públicas.</strong> Para el resumen del día, el servidor consulta servicios públicos de clima, tipos de cambio y noticias. Esas consultas llevan, como mucho, la ciudad que elegiste; nunca tus datos de Google.</li>
+</ul>
+
+<h2>3. Uso de los datos de Google</h2>
+<p>Donna usa la información recibida de las API de Google únicamente para darte las funciones que ves en la app: leer, crear, cambiar y borrar tus eventos y tareas cuando lo pides. El uso y la transferencia de esa información a cualquier otra aplicación se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado. En concreto:</p>
+<ul>
+  <li>No vendemos tus datos ni los usamos para publicidad.</li>
+  <li>No los compartimos con nadie, salvo con Anthropic en la medida necesaria para entender tu orden, como se explica arriba.</li>
+  <li>No los usamos para entrenar modelos de IA.</li>
+  <li>Ninguna persona los lee, salvo que tú lo pidas, que haga falta para corregir un fallo técnico o por seguridad, o que la ley lo exija.</li>
+</ul>
+
+<h2>4. Cuánto tiempo se guardan</h2>
+<ul>
+  <li>Las propuestas sin confirmar caducan a los 30 minutos.</li>
+  <li>El historial técnico del servidor se borra de forma periódica y no se usa para nada más que corregir errores.</li>
+  <li>El permiso de Google se guarda mientras uses Donna. Si lo retiras, deja de funcionar al instante.</li>
+  <li>Las preferencias de tu teléfono se borran al desinstalar la app.</li>
+</ul>
+
+<h2>5. Tu control</h2>
+<ul>
+  <li>Puedes retirar el acceso de Donna a tu cuenta cuando quieras en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  <li>Puedes pedirnos que borremos lo que guardamos de ti escribiendo al contacto de abajo. Lo hacemos y te lo confirmamos.</li>
+  <li>Puedes negar el permiso del micrófono y usar Donna escribiendo.</li>
+</ul>
+
+<h2>6. Seguridad</h2>
+<p>Las comunicaciones entre la app, el servidor y los demás servicios van cifradas (HTTPS). El servidor solo atiende peticiones que traen la clave de la app. Somos un proyecto pequeño y no podemos prometer seguridad absoluta, pero si ocurriera un problema que afecte a tus datos te avisaríamos.</p>
+
+<h2>7. Menores</h2>
+<p>Donna no está pensada para menores de 13 años.</p>
+
+<h2>8. Cambios</h2>
+<p>Si esta política cambia, actualizaremos la fecha de arriba y, si el cambio es importante, te lo diremos dentro de la app.</p>
+
+<h2>9. Contacto</h2>
+<p>Vessel Data Solutions · <a href="mailto:CORREO_DE_CONTACTO">CORREO_DE_CONTACTO</a></p>
+
+<footer><a href="terminos.html">Condiciones del servicio</a></footer>
+</body>
+</html>
